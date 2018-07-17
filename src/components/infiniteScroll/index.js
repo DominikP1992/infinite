@@ -37,7 +37,6 @@ export const Row = ({ items, showLink }) => (
     {items.map(item => (
       <ImageWrapper key={item.id}>
         <RowImg src={item.url} />
-        {console.log('showLink', showLink)}
         {showLink && <Link to={item.owner}>Show User Photos</Link>}
       </ImageWrapper>
     ))}

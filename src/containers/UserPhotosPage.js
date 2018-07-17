@@ -58,7 +58,8 @@ const mapStateToProps = state => ({
 
 // connect with actions
 const mapDispatchToProps = dispatch => ({
-  fetchUserPhotos: (userId, pageNumber) => dispatch(fetchUserPhotos(userId, pageNumber)),
+  fetchUserPhotos: (userId, pageNumber) =>
+    dispatch(fetchUserPhotos(userId, pageNumber)),
   clearUserData: () => dispatch(clearUserData()),
 });
 

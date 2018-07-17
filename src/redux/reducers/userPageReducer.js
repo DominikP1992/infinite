@@ -1,7 +1,6 @@
 import types from '../types';
 import { updateData } from '../utils/utils';
 
-
 const defaultState = {
   photos: [],
   error: false,
@@ -11,11 +10,11 @@ const defaultState = {
 export default (state = defaultState, action) => {
   switch (action.type) {
     case types.FETCH_USER_PHOTOS_SUCCESS:
-      return ({
+      return {
         ...state,
         photos: state.photos.concat(updateData(action.payload)),
         pageNumber: state.pageNumber + 1,
-      });
+      };
     case types.FETCH_USER_PHOTOS_FAILURE:
       return {
         ...state,

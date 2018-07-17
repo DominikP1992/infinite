@@ -1,7 +1,6 @@
 import chunk from 'lodash/chunk';
 import { createSelector } from 'reselect';
 
-
 // simple selector
 export const dataSelector = createSelector(
   data => data,
@@ -11,4 +10,3 @@ export const pageNumberSelector = createSelector(
   data => data,
   number => number,
 );
-
