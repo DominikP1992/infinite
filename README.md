@@ -1,2 +1,1 @@
-# infinite
-inifinit scroll flickr
+yarn start || npm start
